@@ -1,0 +1,22 @@
+@startuml screen_flow_diagram
+
+!include screens.puml
+
+hide SC02022
+hide SC02011
+hide SC02021
+hide SC02022
+hide SC02031
+
+[*] --> SC01001
+
+SC01001 --> SC03011: ログイン
+SC03011 --> SC03021: 新規登録
+SC03021 --> SC03031: 確認
+SC03031 --> SC03011: 登録
+
+SC03011 --> SC03022: 更新
+SC03022 --> SC03031: 確認
+SC03031 --> SC03011: 更新
+
+@enduml
