@@ -1,3 +1,4 @@
 # 変更履歴
 
-  - ver.0.00 2024-08-02 Fri. first commit
+  - ver.0.00.10 2024-08-02 Fri. 設定ファイル追加 
+  - ver.0.00.00 2024-08-02 Fri. first commit
