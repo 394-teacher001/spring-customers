@@ -49,6 +49,12 @@ html body {
   font-size: 1.4rem;
 }
 
+/* サイトヘッダとページフッタの共通基本スタイル */
+.header, .footer {
+  color: white;
+  background-color: black;
+}
+
 /* サイトヘッダの基本スタイル */
 .header {
   display: flex;
@@ -70,6 +76,15 @@ html body {
   width: 100%; /* browserの幅に固定（相対的） */
 }
 
+/* ページフッタの基本スタイル */
+.footer {
+  padding: 1.05rem 1.89rem;
+}
+.footer__body {
+  text-align: center;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho";
+}
+
 /* ヘッダナビゲーションの基本スタイル */
 .navigator__list {
   margin: 0;
@@ -89,16 +104,11 @@ html body {
   margin-left: 3.5rem;
 }
 .navigator__link {
-  color: lightyellow;
+  color: khaki;
   text-decoration: none;
 }
-
-.header, .footer {
-  color: white;
-  background-color: black;
-}
-
-.main {
-  background-color: aliceblue;
+.navigator__link:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
