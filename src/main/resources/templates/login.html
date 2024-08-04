@@ -20,22 +20,28 @@
 		</nav>
 	</header>
 	
-	<main>
-		<article>
-			<form action="/login" method="post">
-				<fieldset>
-					<legend>ログイン</legend>
-					<label>メールアドレス</label>
-					<input type="email" name="email" />
-					<label>パスワード</label>
-					<input type="text" name="password" />
+	<main class="main">
+		<article class="main__wrapper">
+			<form class="form" action="/login" method="post">
+				<fieldset class="form__field-list">
+					<legend class="form__title">ログイン</legend>
+					<div class="form__field-item">
+						<label class="form__label">メールアドレス</label>
+						<input class="form__input--text" type="email" name="email" />
+					</div>
+					<div class="form__field-item">
+						<label class="form__label">パスワード</label>
+						<input class="form__input--text" type="text" name="password" />
+					</div>
+					<div class="form__field-item">
+						<button class="form__button--login">ログイン</button>
+						<a class="form__link" href="/auth/signup">ユーザ新規登録</a>
+					</div>
 				</fieldset>
-				<button>ログイン</button>
-				<div><a href="/auth/signup">ユーザ新規登録</a></div>
 			</form>
 		</article>
 	</main>
-	
+
 	<footer class="footer">
 		<div class="footer__body u-font-style--italic">&copy;2024&nbsp;&nbsp;Java新人研修 &nbsp; ── &nbsp; Office HOGE.</div>
 	</footer>

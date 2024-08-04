@@ -111,4 +111,55 @@ html body {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* メインコンテンツ領域の基本スタイル */
+.main {
+  padding: 1.05rem 1.89rem;
+}
+.main__wrapper {
+  padding: 3.15rem 7rem;
+}
+
+/* 入力部品の基本スタイル */
+.form {
+  width: 43.4rem;
+  margin: 0 auto;
+}
+.form__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.form__field-list {
+  border-width: 0;
+}
+.form__field-item {
+  margin: 0.175rem 0;
+}
+.form__field-item:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.4rem auto;
+}
+.form__label {
+  margin: 0;
+  padding: 0;
+  padding: 0.35rem 0;
+  display: inline-block;
+  width: 10.5rem;
+  font-weight: bold;
+}
+.form__label::after {
+  content: "：";
+}
+.form__label::after {
+  content: none;
+}
+.form__input--text {
+  width: 28rem;
+}
+.form__link {
+  margin-left: 1.75rem;
+}
 /*# sourceMappingURL=style.css.map */

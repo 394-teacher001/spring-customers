@@ -1,0 +1,74 @@
+@charset "utf-8";
+@use "../common/" as common;
+
+// /**
+//  * 入力部品ラベルの基本スタイル
+//  */
+@mixin set-default-input-label-style() {
+	@include set-default-input-style();
+	display: inline-block;
+	&::after {
+		content: "：";
+	}
+}
+
+// /**
+//  * 入力部品の基本スタイル
+//  */
+@mixin set-default-input-style() {
+	@include common.clear-box-model();
+	padding: common.calcSizeByScale(0.250) 0;
+}
+
+/* 入力部品の基本スタイル */
+.form {
+	width: common.calcSizeByScale(31.0);
+	margin: 0 auto;
+	
+	// legendタグのスタイル
+	&__title {
+		font-size: common.calcSizeByScale(1.25);
+		font-weight: bold;
+		text-align: center;
+	}
+
+	// 入力部品領域のスタイル
+	&__field {
+		// 入力部品リストのスタイル
+		&-list {
+			border-width: 0;
+		}
+		// 入力9部品単位のスタイル
+		&-item {
+			margin: common.calcSizeByScale(0.125) 0;
+			// ［ログイン］ボタンが含まれた単位のスタイル
+			&:last-child {
+				width: fit-content;
+				margin: common.calcSizeByScale(1.00) auto;
+			}
+		}
+	}
+	
+	// 入力部品項目名のスタイル
+	&__label {
+		@include set-default-input-label-style();
+		width: common.calcSizeByScale(7.5);
+		font-weight: bold;
+		&::after {
+			content:none;
+		}
+	}
+	
+	// 入力部品本体のスタイル
+	&__input {
+		// テキストボックスのスタイル
+		&--text {
+			width: common.calcSizeByScale(20.0);
+		}
+	}
+
+	// リンクのスタイル
+	&__link {
+		margin-left: common.calcSizeByScale(1.25);
+	}
+}
