@@ -1,0 +1,6 @@
+@charset "utf-8";
+@use "./typesetting" as typeset;
+
+@function calcSizeByScale($scale: 1.0) {
+	@return typeset.$font-size--default * $scale;
+}

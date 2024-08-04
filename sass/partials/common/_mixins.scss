@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+// ** 
+// * 余白削除：外側余白・内側余白ともに削除する
+// */
+@mixin clear-box-model() {
+	margin: 0;
+	padding: 0;
+}

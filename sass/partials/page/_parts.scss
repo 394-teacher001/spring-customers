@@ -1,0 +1,27 @@
+@charset "utf-8";
+@use "../common/" as common;
+@use "./mixin" as *;
+
+
+
+/* サイトヘッダの基本スタイル */
+.header {
+	@include set-header-style-parent();
+	padding: $header-padding--vertical $header-padding--horizontal;
+}
+
+/* ヘッダナビゲーションの基本スタイル */
+.navigator {
+	@include set-navigator-style-parent();
+	&__item {
+		margin: 0 $navigator-item-margin--default;
+		&:first-child {
+			margin: 0 $navigator-item-margin--default;
+			margin-left: common.calcSizeByScale(2.5);
+		}
+	}
+	&__link {
+		color: lightyellow;
+		text-decoration: none;
+	} 
+}

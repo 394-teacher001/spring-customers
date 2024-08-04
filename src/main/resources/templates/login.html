@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>ログイン - 顧客管理システム</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header__title">顧客管理システム</h1>
+		<nav class="header__navigator">
+			<ol class="navigator__list">
+				<li class="navigator__item"><a class="navigator__link" href="#">取引先</a></li>
+				<li class="navigator__item"><a class="navigator__link" href="#">担当者</a></li>
+			</ol>
+			<form class="navigator__form" action="/logout" method="post">
+				<button class="form__button form__button--logout">ログアウト</button>
+			</form>
+		</nav>
+	</header>
+	
+	<main>
+		<article>
+			<form action="/login" method="post">
+				<fieldset>
+					<legend>ログイン</legend>
+					<label>メールアドレス</label>
+					<input type="email" name="email" />
+					<legend>パスワード</legend>
+					<input type="text" name="password" />
+				</fieldset>
+				<button>ログイン</button>
+				<div><a href="/auth/signup">ユーザ新規登録</a></div>
+			</form>
+		</article>
+	</main>
+	<footer class="footer">
+		<div class="footer__body u-font-style--italic">&copy;2024 Java新人研修 - OFFICE HOGE.</div>
+	</footer>
+</body>
+</html>

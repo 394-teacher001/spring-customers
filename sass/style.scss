@@ -1,0 +1,13 @@
+@forward "./partials/base/";
+@forward "./partials/page/";
+@use "./partials/common/" as common;
+
+.header, .footer {
+	color: common.$header-color--fore;
+	background-color: common.$header-color--back;
+}
+
+.main {
+  background-color: aliceblue;
+}
+

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+//* 色の登録 */
+$theme-color:                 dimgray;          // テーマカラー
+
+$header-color--fore:          white;            // サイトヘッダー前景色（文字色）
+$header-color--back:          black;            // サイトヘッダ背景色
+
+$page-header--fore:           white;            // ページヘッダ前景色（文字色）
+$page-header-color--commpany: dodgerblue;       // 取引先ヘッダ背景色
+$page-header-color--contact:  mediumaquamarine; // 連絡先ヘッダ背景色
+
+$accent-color--search:        navy;             // 検索系ボタンカラー
+$accent-color--regist:        tomato;           // 登録系ボタンカラー
+$accent-color--fore:          white;            // ボタントップ文字色
+
+$accent-color--fore:   $theme-color;               // 基本文字色
+$accent-color--back: white;                      // 基本背景色
+$accent-color--border: $theme-color;               // 基本枠線色

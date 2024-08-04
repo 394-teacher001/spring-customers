@@ -1,0 +1,14 @@
+@charset "utf-8";
+@use "../common" as common;
+
+/* 全体の基本スタイル */
+html {
+	font-size: common.$font-scale--default;
+	body {
+		@include common.clear-box-model();
+    color: common.$accent-color--fore;
+		background-color: common.$accent-color--back;
+		font-family: common.$font-family--default;
+		font-size: common.$font-size--default;
+	}
+}
