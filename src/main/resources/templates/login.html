@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
 <head>
 	<meta charset="UTF-8">
 	<title>ログイン - 顧客管理システム</title>
-	<link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-
-	<header class="header">
-		<h1 class="header__title">顧客管理システム</h1>
-		<nav class="header__navigator">
-			<ol class="navigator__list">
-				<li class="navigator__item"><a class="navigator__link" href="#">取引先</a></li>
-				<li class="navigator__item"><a class="navigator__link" href="#">担当者</a></li>
-			</ol>
-			<form class="navigator__form" action="/logout" method="post">
-				<button class="form__button form__button--logout">ログアウト</button>
-			</form>
-		</nav>
-	</header>
-	
+	<th:block layout:fragment="content">
 	<main class="main">
 		<article class="main__wrapper">
 			<form class="form" action="/login" method="post">
@@ -41,9 +29,6 @@
 			</form>
 		</article>
 	</main>
-
-	<footer class="footer">
-		<div class="footer__body u-font-style--italic">&copy;2024&nbsp;&nbsp;Java新人研修 &nbsp; ── &nbsp; Office HOGE.</div>
-	</footer>
+	</th:block>
 </body>
 </html>

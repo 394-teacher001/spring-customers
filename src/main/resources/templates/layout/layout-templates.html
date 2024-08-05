@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="${encoding}">
+	<title>Insert title here</title>
+</head>
+<body>
+	<!-- ヘッダ領域 -->
+	<th:block layout:fragment="header">
+	<header class="header">
+    <!--/* ここにヘッダを記述 */-->
+    ${cursor}
+	</header>
+	</th:block>
+
+	<!-- コンテンツ領域 --><!--/* コンテンツは呼び出すだけ */-->
+	 <th:block layout:fragment="content"></th:block>
+
+	<!-- フッタ領域 -->
+	<th:block layout:fragment="footer">
+	<footer class="footer">
+    <!--/* ここにフッタの内容を記述 */-->
+	</footer>
+	</th:block>
+</body>
+</html>
