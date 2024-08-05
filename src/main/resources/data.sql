@@ -1,3 +1,6 @@
+INSERT INTO user_auth (name, email, password) VALUES ('ƒVƒXƒeƒ€ŠÇ—Ò', 'info@aaa.co.jp', 'himitu');
+INSERT INTO user_auth (name, email, password) VALUES ('“c’†ˆê˜Y', 'tanaka@aaa.co.jp', 'himitu');
+
 INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('‹¤˜a¤–', '340-0822', 'é‹ÊŒ§”ª’ªs‘å£2-1-3',  '045-0000-0000', 'http://www.kyowa.co.jp', '•s“®Y', 3);
 INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('–ì“cH–±“X', '153-0065', '“Œ‹“s–Ú•‹æ’†’¬2’š–Ú‚S|‚P‚P',  '03-3333-3333', 'http://noda=constructor.co.jp', 'Œš’zƒfƒUƒCƒ“', 5);
 INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('O˜a“S|', '676-0074', '•ºŒÉŒ§‚»s”~ˆä2’š–Ú11”Ô6†',  '079-111-1111', 'http://www.sanwa.steel.com', '“S|‹Æ', 4);

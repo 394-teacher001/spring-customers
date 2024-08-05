@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS user_auth;
 DROP TABLE IF EXISTS contact;
 DROP TABLE IF EXISTS company;
 
@@ -27,9 +28,21 @@ CREATE TABLE contact(
 		email VARCHAR(255) NOT NULL
 );
 
+/**********************************/
+/* テーブル名: 認証情報 */
+/**********************************/
+CREATE TABLE user_auth(
+		id SERIAL,
+		name VARCHAR(100) NOT NULL,
+		email VARCHAR(255) NOT NULL,
+		password VARCHAR(255) NOT NULL
+);
+
 
 ALTER TABLE company ADD CONSTRAINT IDX_company_PK PRIMARY KEY (id);
 
 ALTER TABLE contact ADD CONSTRAINT IDX_contact_PK PRIMARY KEY (id);
 ALTER TABLE contact ADD CONSTRAINT IDX_contact_FK0 FOREIGN KEY (company_id) REFERENCES company (id);
+
+ALTER TABLE user_auth ADD CONSTRAINT IDX_user_auth_PK PRIMARY KEY (id);
 
