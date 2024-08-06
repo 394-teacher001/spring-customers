@@ -24,7 +24,11 @@
 .form {
 	width: common.calcSizeByScale(31.0);
 	margin: 0 auto;
+//	&__wrapper {
+		padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
+//	}
 	
+
 	// legendタグのスタイル
 	&__title {
 		font-size: common.calcSizeByScale(1.25);

@@ -4,15 +4,16 @@
       layout:decorate="~{layout/layout}">
 <head>
 	<meta charset="UTF-8">
-	<title>ログイン - 顧客管理システム</title>
+	<title th:text="${pageTitle}"></title>
 </head>
 <body>
 	<th:block layout:fragment="content">
 	<main class="main">
 		<article class="main__wrapper">
-			<form class="form" action="/login" method="post">
+			<form class="form form__wrapper" action="/login" method="post">
 				<fieldset class="form__field-list">
 					<legend class="form__title">ログイン</legend>
+					<p class="message--error u-text--error u-text-align--center" th:if="${error}" th:text="${error}"></p>
 					<div class="form__field-item">
 						<label class="form__label">メールアドレス</label>
 						<input class="form__input--text" type="email" name="email" />

@@ -13,13 +13,14 @@
 	<th:block layout:fragment="header">
 	<header class="header">
 		<h1 class="header__title">顧客管理システム</h1>
-		<th:block  th:if="${isLogged}"><!-- ログイン画面表示の際には非表示するブロック -->
+		<!-- ログイン画面表示の際には非表示するブロック：条件の記述のしかたに注意（全否定を利用） -->
+		<th:block  th:if="${(@authInfo != null) && (@authInfo.email != null)}">
 		<nav class="header__navigator">
 			<ol class="navigator__list">
 				<li class="navigator__item"><a class="navigator__link" href="#">取引先</a></li>
 				<li class="navigator__item"><a class="navigator__link" href="#">担当者</a></li>
 			</ol>
-			<form class="navigator__form" action="/logout" method="post">
+			<form class="navigator__form" action="/logout" method="get">
 				<button class="form__button form__button--logout">ログアウト</button>
 			</form>
 		</nav>

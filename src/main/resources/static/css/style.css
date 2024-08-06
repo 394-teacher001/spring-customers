@@ -36,6 +36,10 @@
   font-style: italic;
 }
 
+.u-text--error {
+  color: tomato;
+}
+
 /* 全体の基本スタイル */
 html {
   font-size: 62.5%;
@@ -115,15 +119,18 @@ html body {
 /* メインコンテンツ領域の基本スタイル */
 .main {
   padding: 1.05rem 1.89rem;
-}
-.main__wrapper {
-  padding: 3.15rem 7rem;
+  /*
+  &__wrapper {
+  	padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
+  }
+  */
 }
 
 /* 入力部品の基本スタイル */
 .form {
   width: 43.4rem;
   margin: 0 auto;
+  padding: 3.15rem 7rem;
 }
 .form__title {
   font-size: 1.75rem;
