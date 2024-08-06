@@ -1,0 +1,57 @@
+@charset "utf-8";
+@use "../common/" as *;
+
+$length-system-name: str-length($string: "顧客管理システム");
+
+$font-scale--header-title: 1.35;
+$font-size--header-title-half: $font-scale--header-title / 2;
+
+$header-padding--vertical: calcSizeByScale($font-scale--tri-quad);
+$header-padding--horizontal: calcSizeByScale($font-scale--header-title);
+
+$navigator-item-margin-scale--default: 1.25;
+$navigator-item-margin-scale--double: 2.5;
+$navigator-item-margin--default: calcSizeByScale(1.25);
+
+// /**
+//  * サイトヘッダの基本スタイル
+//  */
+@mixin set-header-style-parent() {
+  display: flex;
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: space-between; /* 左右に要素を分散 */
+
+	&__title {
+		@include clear-box-model();
+		width: calcSizeByScale($length-system-name * $font-scale--header-title);
+		font-size: calcSizeByScale(1.35);
+		flex-shrink: 0; /* タイトルの縮小を防止 */
+		white-space: nowrap; /* テキストの改行を防止 */	
+	}
+
+	&__navigator {
+		display: flex;
+		align-items: center; /* 垂直方向に中央揃え */
+		width: 100%; /* browserの幅に固定（相対的） */	
+	}
+}
+
+// /**
+//  * ヘッダナビゲーションの基本スタイル
+//  */
+@mixin set-navigator-style-parent() {
+	&__list {
+		@include clear-box-model();
+		display: flex;
+		list-style: none;
+		margin-right: auto; /* リストを左に固定 */
+	}
+
+	&__form {
+		margin-left: auto; /* フォームを右に固定 */
+	}
+}
+
+// @mixin set-navigator-item-style {
+
+// }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8">
+	<title>ヘッダとフッタ用フラグメント</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+	<!-- ヘッダ領域 -->
+	<th:block layout:fragment="header">
+	<header class="header">
+		<h1 class="header__title">顧客管理システム</h1>
+		<!-- ログイン画面表示の際には非表示するブロック：条件の記述のしかたに注意（全否定を利用） -->
+		<th:block  th:if="${(@authInfo != null) && (@authInfo.email != null)}">
+		<nav class="header__navigator">
+			<ol class="navigator__list">
+				<li class="navigator__item"><a class="navigator__link" href="#">取引先</a></li>
+				<li class="navigator__item"><a class="navigator__link" href="#">担当者</a></li>
+			</ol>
+			<form class="navigator__form" action="/logout" method="get">
+				<button class="form__button form__button--logout">ログアウト</button>
+			</form>
+		</nav>
+		</th:block>
+	</header>
+	</th:block>
+
+	<!-- コンテンツ領域 -->
+	 <th:block layout:fragment="content"></th:block>
+
+	<!-- フッタ領域 -->
+	<th:block layout:fragment="footer">
+	<footer class="footer">
+		<div class="footer__body u-font-style--italic">
+			&copy;2024&nbsp;&nbsp;Java新人研修 &nbsp; ── &nbsp; Office HOGE.
+		</div>
+	</footer>
+	</th:block>
+
+</body>
+</html>

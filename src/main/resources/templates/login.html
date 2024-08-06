@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${pageTitle}"></title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+	<main class="main">
+		<article class="main__wrapper">
+			<form class="form form__wrapper" action="/login" method="post">
+				<fieldset class="form__field-list">
+					<legend class="form__title">ログイン</legend>
+					<p class="message--error u-text--error u-text-align--center" th:if="${error}" th:text="${error}"></p>
+					<div class="form__field-item">
+						<label class="form__label">メールアドレス</label>
+						<input class="form__input--text" type="email" name="email" />
+					</div>
+					<div class="form__field-item">
+						<label class="form__label">パスワード</label>
+						<input class="form__input--text" type="text" name="password" />
+					</div>
+					<div class="form__field-item">
+						<button class="form__button--login">ログイン</button>
+						<a class="form__link" href="/auth/signup">ユーザ新規登録</a>
+					</div>
+				</fieldset>
+			</form>
+		</article>
+	</main>
+	</th:block>
+</body>
+</html>

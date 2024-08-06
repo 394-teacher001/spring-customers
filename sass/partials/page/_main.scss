@@ -1,0 +1,13 @@
+@charset "utf-8";
+@use "../common/" as common;
+@use "./mixin" as *;
+
+/* メインコンテンツ領域の基本スタイル */
+.main {
+	padding: $header-padding--vertical $header-padding--horizontal;
+	/*
+	&__wrapper {
+		padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
+	}
+	*/
+}

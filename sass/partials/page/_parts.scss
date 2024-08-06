@@ -1,0 +1,44 @@
+@charset "utf-8";
+@use "../common/" as common;
+@use "./mixin" as *;
+
+/* サイトヘッダとページフッタの共通基本スタイル */
+.header, .footer {
+	color: common.$header-color--fore;
+	background-color: common.$header-color--back;
+}
+
+/* サイトヘッダの基本スタイル */
+.header {
+	@include set-header-style-parent();
+	padding: $header-padding--vertical $header-padding--horizontal;
+}
+
+/* ページフッタの基本スタイル */
+.footer {
+	padding: $header-padding--vertical $header-padding--horizontal;
+	&__body {
+		text-align: center;
+		font-family: common.$font-family--copyright;
+	}
+}
+
+/* ヘッダナビゲーションの基本スタイル */
+.navigator {
+	@include set-navigator-style-parent();
+	&__item {
+		margin: 0 $navigator-item-margin--default;
+		&:first-child {
+			margin: 0 $navigator-item-margin--default;
+			margin-left: common.calcSizeByScale(2.5);
+		}
+	}
+	&__link {
+		color: khaki;
+		text-decoration: none;
+		&:hover {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	} 
+}

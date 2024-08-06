@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* 非表示 */
+.u-border--hidden {
+  border-width: 0;
+}
+
+/* ブロックエレメントの中央寄せ */
+.u-align--center {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* ブロックエレメントの右寄せ */
+.u-align--right {
+  margin-left: auto;
+}
+
+/* インラインエレメントの中央寄せ */
+.u-text-align--center {
+  text-align: center;
+}
+
+/* インラインエレメントの右寄せ */
+.u-text-align--right {
+  text-align: right;
+}
+
+.u-list-style--none {
+  list-style-type: none;
+}
+
+/* フォントスタイルの斜体 */
+.u-font-style--italic {
+  font-style: italic;
+}
+
+/* エラーメッセージの文字色 */
+.u-text--error {
+  color: tomato;
+}
+
+.u-display--inline {
+  display: inline;
+}
+
+/* 全体の基本スタイル */
+html {
+  font-size: 62.5%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  color: dimgray;
+  background-color: white;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 1.4rem;
+}
+
+/* サイトヘッダとページフッタの共通基本スタイル */
+.header, .footer {
+  color: white;
+  background-color: black;
+}
+
+/* サイトヘッダの基本スタイル */
+.header {
+  display: flex;
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: space-between; /* 左右に要素を分散 */
+  padding: 1.05rem 1.89rem;
+}
+.header__title {
+  margin: 0;
+  padding: 0;
+  width: 15.12rem;
+  font-size: 1.89rem;
+  flex-shrink: 0; /* タイトルの縮小を防止 */
+  white-space: nowrap; /* テキストの改行を防止 */
+}
+.header__navigator {
+  display: flex;
+  align-items: center; /* 垂直方向に中央揃え */
+  width: 100%; /* browserの幅に固定（相対的） */
+}
+
+/* ページフッタの基本スタイル */
+.footer {
+  padding: 1.05rem 1.89rem;
+}
+.footer__body {
+  text-align: center;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho";
+}
+
+/* ヘッダナビゲーションの基本スタイル */
+.navigator__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-right: auto; /* リストを左に固定 */
+}
+.navigator__form {
+  margin-left: auto; /* フォームを右に固定 */
+}
+.navigator__item {
+  margin: 0 1.75rem;
+}
+.navigator__item:first-child {
+  margin: 0 1.75rem;
+  margin-left: 3.5rem;
+}
+.navigator__link {
+  color: khaki;
+  text-decoration: none;
+}
+.navigator__link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* メインコンテンツ領域の基本スタイル */
+.main {
+  padding: 1.05rem 1.89rem;
+  /*
+  &__wrapper {
+  	padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
+  }
+  */
+}
+
+/* 入力部品の基本スタイル */
+.form {
+  width: 43.4rem;
+  margin: 0 auto;
+  padding: 3.15rem 7rem;
+}
+.form__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.form__field-list {
+  border-width: 0;
+}
+.form__field-item {
+  margin: 0.175rem 0;
+}
+.form__field-item:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.4rem auto;
+}
+.form__label {
+  margin: 0;
+  padding: 0;
+  padding: 0.35rem 0;
+  display: inline-block;
+  width: 10.5rem;
+  font-weight: bold;
+}
+.form__label::after {
+  content: "：";
+}
+.form__label::after {
+  content: none;
+}
+.form__input--text {
+  width: 28rem;
+}
+.form__input--text::-moz-placeholder {
+  color: gainsboro;
+}
+.form__input--text::placeholder {
+  color: gainsboro;
+}
+.form__link {
+  margin-left: 1.75rem;
+}
+.form__message {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.05rem auto;
+}
+.form__message--error {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.05rem auto;
+  color: tomato;
+  list-style-type: none;
+}
+/*# sourceMappingURL=style.css.map */
