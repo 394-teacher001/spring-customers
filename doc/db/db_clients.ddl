@@ -45,4 +45,5 @@ ALTER TABLE contact ADD CONSTRAINT IDX_contact_PK PRIMARY KEY (id);
 ALTER TABLE contact ADD CONSTRAINT IDX_contact_FK0 FOREIGN KEY (company_id) REFERENCES company (id);
 
 ALTER TABLE user_auth ADD CONSTRAINT IDX_user_auth_PK PRIMARY KEY (id);
+ALTER TABLE user_auth ADD CONSTRAINT IDX_user_auth_UQ UNIQUE (email);
 

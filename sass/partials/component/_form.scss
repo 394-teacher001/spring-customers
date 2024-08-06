@@ -20,6 +20,12 @@
 	padding: common.calcSizeByScale(0.250) 0;
 }
 
+@mixin set-message-style() {
+	@include common.clear-box-model();
+	width: fit-content;
+	margin: common.calcSizeByScale(0.75) auto;
+}
+
 /* 入力部品の基本スタイル */
 .form {
 	width: common.calcSizeByScale(31.0);
@@ -68,6 +74,9 @@
 		// テキストボックスのスタイル
 		&--text {
 			width: common.calcSizeByScale(20.0);
+			&::placeholder {
+				color: gainsboro;
+			}
 		}
 	}
 
@@ -75,4 +84,16 @@
 	&__link {
 		margin-left: common.calcSizeByScale(1.25);
 	}
+
+	// メッセージのスタイル
+	&__message {
+		@include set-message-style();
+		&--error {
+			// エラーメッセージのスタイル
+			@include set-message-style();
+			color: common.$accent-color--error;
+			list-style-type: none;
+		}
+	}
+
 }

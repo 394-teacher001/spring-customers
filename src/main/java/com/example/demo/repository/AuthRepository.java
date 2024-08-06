@@ -14,4 +14,11 @@ public interface AuthRepository extends JpaRepository<UserAuth, Integer> {
 	 */
 	UserAuth findByEmailAndPassword(String email, String password);
 
+	/**
+	 * メールアドレスに合致する認証情報を崇德する
+	 * @param email メールアドレス
+	 * @return UserAuthクラスのインスタンスまたはnull
+	 */
+	UserAuth findByEmail(String email);
+
 }

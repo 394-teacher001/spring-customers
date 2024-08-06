@@ -1,17 +1,17 @@
-INSERT INTO user_auth (name, email, password) VALUES ('ƒVƒXƒeƒ€ŠÇ—Ò', 'info@aaa.co.jp', 'himitu');
-INSERT INTO user_auth (name, email, password) VALUES ('“c’†ˆê˜Y', 'tanaka@aaa.co.jp', 'himitu');
+INSERT INTO user_auth (name, email, password) VALUES ('ã‚·ã‚¹ãƒ†ãƒ ç®¡ç†è€…', 'info@aaa.com', 'himitu');
+INSERT INTO user_auth (name, email, password) VALUES ('ç”°ä¸­ä¸€éƒ', 'tanaka@aaa.com', 'himitu');
 
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('‹¤˜a¤–', '340-0822', 'é‹ÊŒ§”ª’ªs‘å£2-1-3',  '045-0000-0000', 'http://www.kyowa.co.jp', '•s“®Y', 3);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('–ì“cH–±“X', '153-0065', '“Œ‹“s–Ú•‹æ’†’¬2’š–Ú‚S|‚P‚P',  '03-3333-3333', 'http://noda=constructor.co.jp', 'Œš’zƒfƒUƒCƒ“', 5);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('O˜a“S|', '676-0074', '•ºŒÉŒ§‚»s”~ˆä2’š–Ú11”Ô6†',  '079-111-1111', 'http://www.sanwa.steel.com', '“S|‹Æ', 4);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('—LŒÀ‰ïĞƒAƒXƒNƒ~[', '141-0033', '“Œ‹“s•iì‹æ¼•iì1-2-30 •iìƒXƒNƒGƒA3ŠK',  '03-5555-5555', 'http://www.askme.co.jp', 'ECƒRƒ“ƒTƒ‹ƒ^ƒ“ƒg–‹Æ', 2);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('‹g“c¤“X', '151-0071', '“Œ‹“sa’J‹æ–{’¬2-13-1 ƒOƒ‰ƒ“ƒhƒ‚[ƒ‹1F',  '03-2222-2222', 'http://www.yoshida-luntons.com', '’ñ“”‚Ì»‘¢E”Ì”„', 3);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('Š”®‰ïĞƒgƒ‰ƒXƒg', '577-0015', '‘åã•{“Œ‘åãs’·“c3-6-4',  '06-6666-6666', 'http://www.trsust.co.jp', '‹ó’²H–E“d‹CH–', 4);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('Š”®‰ïĞƒTƒ“ƒ‰ƒCƒY', '156-0042', '“Œ‹“s¢“c’J‹æ‰Hª–Ø1-12-13',  '03-1234-5678', 'http://sunrise.com', 'ŠÂ‹«ƒGƒlƒ‹ƒM[–‹Æ', 2);
-INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('‹¤‰hƒR[ƒ|ƒŒ[ƒVƒ‡ƒ“', '124-0011', '“Œ‹“sŠ‹ü‹æl‚Â–Ø3-33-15',  '03-3456-9876', 'http://kyoei-corpo.com', '•ï‘•—p•i‚ÌŠé‰æE§ì', 3);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('å…±å’Œå•†äº‹', '340-0822', 'åŸ¼ç‰çœŒå…«æ½®å¸‚å¤§ç€¬2-1-3',  '045-0000-0000', 'http://www.kyowa.co.jp', 'ä¸å‹•ç”£', 3);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('é‡ç”°å·¥å‹™åº—', '153-0065', 'æ±äº¬éƒ½ç›®é»’åŒºä¸­ç”º2ä¸ç›®ï¼”ï¼ï¼‘ï¼‘',  '03-3333-3333', 'http://noda=constructor.co.jp', 'å»ºç¯‰ãƒ‡ã‚¶ã‚¤ãƒ³', 5);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('ä¸‰å’Œé‰„é‹¼', '676-0074', 'å…µåº«çœŒé«˜ç ‚å¸‚æ¢…äº•2ä¸ç›®11ç•ª6å·',  '079-111-1111', 'http://www.sanwa.steel.com', 'é‰„é‹¼æ¥­', 4);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('æœ‰é™ä¼šç¤¾ã‚¢ã‚¹ã‚¯ãƒŸãƒ¼', '141-0033', 'æ±äº¬éƒ½å“å·åŒºè¥¿å“å·1-2-30 å“å·ã‚¹ã‚¯ã‚¨ã‚¢3éš',  '03-5555-5555', 'http://www.askme.co.jp', 'ECã‚³ãƒ³ã‚µãƒ«ã‚¿ãƒ³ãƒˆäº‹æ¥­', 2);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('å‰ç”°å•†åº—', '151-0071', 'æ±äº¬éƒ½æ¸‹è°·åŒºæœ¬ç”º2-13-1 ã‚°ãƒ©ãƒ³ãƒ‰ãƒ¢ãƒ¼ãƒ«1F',  '03-2222-2222', 'http://www.yoshida-luntons.com', 'æç¯ã®è£½é€ ãƒ»è²©å£²', 3);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('æ ªå¼ä¼šç¤¾ãƒˆãƒ©ã‚¹ãƒˆ', '577-0015', 'å¤§é˜ªåºœæ±å¤§é˜ªå¸‚é•·ç”°3-6-4',  '06-6666-6666', 'http://www.trsust.co.jp', 'ç©ºèª¿å·¥äº‹ãƒ»é›»æ°—å·¥äº‹', 4);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('æ ªå¼ä¼šç¤¾ã‚µãƒ³ãƒ©ã‚¤ã‚º', '156-0042', 'æ±äº¬éƒ½ä¸–ç”°è°·åŒºç¾½æ ¹æœ¨1-12-13',  '03-1234-5678', 'http://sunrise.com', 'ç’°å¢ƒã‚¨ãƒãƒ«ã‚®ãƒ¼äº‹æ¥­', 2);
+INSERT INTO company (name, zipcode, address, phone, url, industry, priority) VALUES ('å…±æ „ã‚³ãƒ¼ãƒãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³', '124-0011', 'æ±äº¬éƒ½è‘›é£¾åŒºå››ã¤æœ¨3-33-15',  '03-3456-9876', 'http://kyoei-corpo.com', 'åŒ…è£…ç”¨å“ã®ä¼ç”»ãƒ»åˆ¶ä½œ', 3);
 
-INSERT INTO contact (name, company_id, phone, email) VALUES ('R“c‘¾˜Y', 7, '080-3454-8761', 'yamada@example.com');
-INSERT INTO contact (name, company_id, phone, email) VALUES ('—é–Ø‰Ôq', 4, '0120-444-555', 'suzuki@example.com');
-INSERT INTO contact (name, company_id, phone, email) VALUES ('‹g“c‹`’j', 6, '045-666-7890', 'yoshida@askme.co.jp');
-INSERT INTO contact (name, company_id, phone, email) VALUES ('²“¡—RŒb', 4, '090-3100-4480', 'sato-yoshie@askme.co.jp');
-INSERT INTO contact (name, company_id, phone, email) VALUES ('ˆÉ“¡Œbq', 3, '070-2234-5632', 'ito-keiko@sanwatekkou.co.jp');
+INSERT INTO contact (name, company_id, phone, email) VALUES ('å±±ç”°å¤ªéƒ', 7, '080-3454-8761', 'yamada@example.com');
+INSERT INTO contact (name, company_id, phone, email) VALUES ('éˆ´æœ¨èŠ±å­', 4, '0120-444-555', 'suzuki@example.com');
+INSERT INTO contact (name, company_id, phone, email) VALUES ('å‰ç”°ç¾©ç”·', 6, '045-666-7890', 'yoshida@askme.co.jp');
+INSERT INTO contact (name, company_id, phone, email) VALUES ('ä½è—¤ç”±æµ', 4, '090-3100-4480', 'sato-yoshie@askme.co.jp');
+INSERT INTO contact (name, company_id, phone, email) VALUES ('ä¼Šè—¤æµå­', 3, '070-2234-5632', 'ito-keiko@sanwatekkou.co.jp');

@@ -36,8 +36,13 @@
   font-style: italic;
 }
 
+/* エラーメッセージの文字色 */
 .u-text--error {
   color: tomato;
+}
+
+.u-display--inline {
+  display: inline;
 }
 
 /* 全体の基本スタイル */
@@ -166,7 +171,31 @@ html body {
 .form__input--text {
   width: 28rem;
 }
+.form__input--text::-moz-placeholder {
+  color: gainsboro;
+}
+.form__input--text::placeholder {
+  color: gainsboro;
+}
 .form__link {
   margin-left: 1.75rem;
+}
+.form__message {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.05rem auto;
+}
+.form__message--error {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1.05rem auto;
+  color: tomato;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
