@@ -1,8 +1,9 @@
 DROP TABLE IF EXISTS contact;
 DROP TABLE IF EXISTS company;
+DROP TABLE IF EXISTS user_auth;
 
 /**********************************/
-/* ƒe[ƒuƒ‹–¼: æˆøæŠé‹Æ */
+/* ãƒ†ãƒ¼ãƒ–ãƒ«å: å–å¼•å…ˆä¼æ¥­ */
 /**********************************/
 CREATE TABLE company(
 		id          SERIAL,
@@ -17,7 +18,7 @@ CREATE TABLE company(
 );
 
 /**********************************/
-/* ƒe[ƒuƒ‹–¼: ’S“–Ò˜A—æ */
+/* ãƒ†ãƒ¼ãƒ–ãƒ«å: æ‹…å½“è€…é€£çµ¡å…ˆ */
 /**********************************/
 CREATE TABLE contact(
 		id         SERIAL,
@@ -27,7 +28,20 @@ CREATE TABLE contact(
 		email      VARCHAR(255) NOT NULL
 );
 
+/**********************************/
+/* ãƒ†ãƒ¼ãƒ–ãƒ«å: èªè¨¼æƒ…å ± */
+/**********************************/
+CREATE TABLE user_auth(
+		id       SERIAL,
+		name     VARCHAR(100) NOT NULL,
+		email    VARCHAR(255) NOT NULL,
+		password VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE user_auth ADD CONSTRAINT IDX_user_auth_PK PRIMARY KEY (id);
+ALTER TABLE user_auth ADD CONSTRAINT IDX_user_auth_UQ UNIQUE (email);
+
 ALTER TABLE company ADD CONSTRAINT IDX_company_PK PRIMARY KEY (id);
+
 ALTER TABLE contact ADD CONSTRAINT IDX_contact_PK PRIMARY KEY (id);
 ALTER TABLE contact ADD CONSTRAINT IDX_contact_FK FOREIGN KEY (company_id) REFERENCES company (id);
-

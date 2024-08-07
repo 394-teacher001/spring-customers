@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+<head>
+	<meta charset="UTF-8">
+	<title>取引先一覧 - 顧客管理システム</title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+	<main class="main">
+		<article class="main__wrapper">
+			<header class="main__header">
+				<h1>取引先検索</h1>
+				<form actin="/companies/create" method="get">
+					<button>新規登録</button>
+				</form>
+			</header>
+		</article>
+	</main>
+	</th:block>
+</body>
+</html>

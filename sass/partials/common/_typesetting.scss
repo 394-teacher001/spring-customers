@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// フォントサイズの基本スタイル
+$font-scale--default: 62.5%; // フォントサイズの基本倍率：1rem = 10px
+$font-size--default: 1.4rem; // フォントサイズの基本サイズ
+
+$font-scale--quad: 0.25;     // フォントサイズのクワタ（0.25rem = 2.5px）
+$font-scale--half: $font-scale--quad * 2; // フォントサイズの半分
+$font-scale--tri-quad: 0.75; // フォントサイズの3クワタ
+
+// 基本スタイルのフォントファミリー：デフォルトの画面表示用
+$font-family--default: "Helvetica Neue",
+                      Arial,
+                      "Hiragino Kaku Gothic ProN",
+                      "Hiragino Sans",
+                      Meiryo,
+                      sans-serif;
+// 著作権表示のフォントファミリー：著作権表示用（ページフッタに共通表示）
+$font-family--copyright: "Times New Roman",
+                         "YuMincho",
+                         "Hiragino Mincho ProN",
+                         "Yu Mincho",
+                         "MS PMincho";

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+			xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+			layout:decorate="~{layout/layout}">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${pageTitle}"></title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+	<main class="main">
+		<article class="main__wrapper">
+			<form class="form form__wrapper" action="/signup" method="post">
+				<fieldset class="form__field-list">
+					<legend class="form__title">ユーザ登録確認</legend>
+					<th:block th:unless="${errorList}">
+					<p class="form__message">以下の内容で登録していいですか？</p>
+					</th:block>
+					<!--/* 登録情報の入力領域 */-->
+					<div class="form__field-item">
+						<label class="form__label">ユーザ名</label>
+            <div class="u-display--inline" th:text="${entry.name}"></div><br />
+						<input type="hidden" name="name" th:value="${entry.name}" />
+					</div>
+					<div class="form__field-item">
+						<label class="form__label">メールアドレス</label>
+            <div class="u-display--inline" th:text="${entry.email}"></div><br />
+						<input type="hidden" name="email" th:value="${entry.email}" />
+					</div>
+					<div class="form__field-item">
+						<label class="form__label">パスワード</label>
+            <div class="u-display--inline" th:text="${entry.password}"></div><br />
+						<input type="hidden" name="password" th:value="${entry.password}" />
+					</div>
+					<div class="form__field-item">
+						<button class="form__button--login" formaction="/signup?mode=register">登録する</button>
+            <button class="form__button--login" formaction="/signup?mode=update">修正する</button>
+						<a class="form__link" href="/login">ログイン画面に戻る</a>
+					</div>
+				</fieldset>
+			</form>
+		</article>
+	</main>
+	</th:block>
+</body>
+</html>
