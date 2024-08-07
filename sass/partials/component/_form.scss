@@ -7,9 +7,20 @@
 @mixin set-default-input-label-style() {
 	@include set-default-input-style();
 	display: inline-block;
-	&::after {
-		content: "：";
-	}
+}
+
+// /**
+//  * ボタンのの基本スタイル
+//  * @param $border-width 枠線の幅：デフォルト値は0.5px
+//  */
+@mixin set-default-button-style($border-width: 0.5px) {
+	@include set-default-input-style();
+  display: inline-block;
+	width:  common.calcSizeByScale(6.0);
+	border-width: $border-width;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; // 文字の下線を非表示
 }
 
 // /**
@@ -20,6 +31,9 @@
 	padding: common.calcSizeByScale(0.250) 0;
 }
 
+// /**
+//  * メッセージの基本スタイル
+//  */
 @mixin set-message-style() {
 	@include common.clear-box-model();
 	width: fit-content;
@@ -30,10 +44,7 @@
 .form {
 	width: common.calcSizeByScale(31.0);
 	margin: 0 auto;
-//	&__wrapper {
-		padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
-//	}
-	
+	padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
 
 	// legendタグのスタイル
 	&__title {
@@ -77,6 +88,10 @@
 			&::placeholder {
 				color: gainsboro;
 			}
+			// 幅がデフォルトの半分のテキストボックス
+			&-half {
+				width: common.calcSizeByScale(10.0);
+			}
 		}
 	}
 
@@ -93,6 +108,34 @@
 			@include set-message-style();
 			color: common.$accent-color--error;
 			list-style-type: none;
+		}
+	}
+
+	&__select {
+		&--unfit-content {
+			width: common.calcSizeByScale(10.5);
+		}
+	}
+
+	&__button {
+		&--login {
+			@include set-default-button-style();
+			box-shadow: 1.5px 1.5px 0 dimgray; // 影の太さ・色
+			&:active {
+				box-shadow: 0.5px 0.5px 0 dimgray; // 影の太さ・色
+			}
+		}
+		&--logout {
+			@include set-default-button-style();
+		}
+		&--modify {
+			@include set-default-button-style($border-width: 0);
+			color: common.$button-color--fore;
+			background-color: common.$button-color--modify;
+			box-shadow: 2.5px 2.5px 0 #ca1c30; // 影の太さ・色
+			&:active {
+				box-shadow: 1.5px 1.5px 0 #ca1c30; // 影の太さ・色
+			}
 		}
 	}
 

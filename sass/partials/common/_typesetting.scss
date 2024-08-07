@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* Google Fonts Icons の読み込み */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 // フォントサイズの基本スタイル
 $font-scale--default: 62.5%; // フォントサイズの基本倍率：1rem = 10px
 $font-size--default: 1.4rem; // フォントサイズの基本サイズ
@@ -21,3 +24,16 @@ $font-family--copyright: "Times New Roman",
                          "Hiragino Mincho ProN",
                          "Yu Mincho",
                          "MS PMincho";
+
+/**
+ * 検索タイトル用アイコン：虫眼鏡アイコン
+ * 参考URL：https://zenn.dev/yurukei20/articles/2b315c826be4d8
+ */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+

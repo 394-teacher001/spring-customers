@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+@forward "./funxions";
+@use "./funxions" as *;
 /* 非表示 */
 .u-border--hidden {
 	border-width: 0;
@@ -42,4 +43,9 @@
 
 .u-display--inline {
 	display: inline;
+}
+
+.u-icon {
+	display: inline-block;
+	margin-right: calcSizeByScale(1.0);
 }

@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* Google Fonts Icons の読み込み */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+/**
+ * 検索タイトル用アイコン：虫眼鏡アイコン
+ * 参考URL：https://zenn.dev/yurukei20/articles/2b315c826be4d8
+ */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 /* 非表示 */
 .u-border--hidden {
   border-width: 0;
@@ -43,6 +53,11 @@
 
 .u-display--inline {
   display: inline;
+}
+
+.u-icon {
+  display: inline-block;
+  margin-right: 1.4rem;
 }
 
 /* 全体の基本スタイル */
@@ -123,12 +138,27 @@ html body {
 
 /* メインコンテンツ領域の基本スタイル */
 .main {
+  margin: 0;
+  padding: 0;
+}
+.main--login {
   padding: 1.05rem 1.89rem;
-  /*
-  &__wrapper {
-  	padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
-  }
-  */
+}
+.main__header {
+  display: flex;
+  align-items: center;
+  background-color: purple;
+}
+.main__header-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding: 2.1rem 1.89rem;
+  font-size: 1.89rem;
+}
+.main__header--company {
+  color: white;
+  background-color: #3498DB;
 }
 
 /* 入力部品の基本スタイル */
@@ -163,9 +193,6 @@ html body {
   font-weight: bold;
 }
 .form__label::after {
-  content: "：";
-}
-.form__label::after {
   content: none;
 }
 .form__input--text {
@@ -176,6 +203,9 @@ html body {
 }
 .form__input--text::placeholder {
   color: gainsboro;
+}
+.form__input--text-half {
+  width: 14rem;
 }
 .form__link {
   margin-left: 1.75rem;
@@ -195,7 +225,53 @@ html body {
   width: -moz-fit-content;
   width: fit-content;
   margin: 1.05rem auto;
-  color: tomato;
+  color: red;
   list-style-type: none;
+}
+.form__select--unfit-content {
+  width: 14.7rem;
+}
+.form__button--login {
+  margin: 0;
+  padding: 0;
+  padding: 0.35rem 0;
+  display: inline-block;
+  width: 8.4rem;
+  border-width: 0.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 1.5px 1.5px 0 dimgray;
+}
+.form__button--login:active {
+  box-shadow: 0.5px 0.5px 0 dimgray;
+}
+.form__button--logout {
+  margin: 0;
+  padding: 0;
+  padding: 0.35rem 0;
+  display: inline-block;
+  width: 8.4rem;
+  border-width: 0.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form__button--modify {
+  margin: 0;
+  padding: 0;
+  padding: 0.35rem 0;
+  display: inline-block;
+  width: 8.4rem;
+  border-width: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  box-shadow: 2.5px 2.5px 0 #ca1c30;
+}
+.form__button--modify:active {
+  box-shadow: 1.5px 1.5px 0 #ca1c30;
 }
 /*# sourceMappingURL=style.css.map */

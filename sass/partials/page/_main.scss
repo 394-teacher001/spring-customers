@@ -4,10 +4,23 @@
 
 /* メインコンテンツ領域の基本スタイル */
 .main {
-	padding: $header-padding--vertical $header-padding--horizontal;
-	/*
-	&__wrapper {
-		padding: common.calcSizeByScale(2.25) common.calcSizeByScale(5.0);
+	@include common.clear-box-model();
+	&--login {
+		padding: $header-padding--vertical $header-padding--horizontal;
 	}
-	*/
+	&__header {
+		display: flex;
+		align-items: center;
+		background-color: common.$accent-color--test;
+		&-text {
+			@include common.clear-box-model();
+			display: flex;
+			padding: $header-padding--vertical * 2.0 $header-padding--horizontal;
+			font-size: common.calcSizeByScale(1.35);
+		}
+		&--company {
+			color: common.$page-header--fore;
+			background-color: common.$page-header-color--company;
+		}
+	}
 }
