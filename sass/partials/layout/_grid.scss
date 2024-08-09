@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.grid {
+  &__wrapper {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: fit-content 1fr;
+  }
+  &--12 {
+    grid-column: 1/2;
+    width: fit-content;
+  }
+  &--23 {
+    grid-column: 2/3;
+  }
+}

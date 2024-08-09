@@ -25,10 +25,10 @@
 					<button class="form__button--modify">新規登録</button>
 				</form>
 			</header>
-			<section class="main__body">
-				<aside class="navigator">
-					<form action="" method="">
-						<fieldset>
+			<section class="main__content grid__wrapper">
+				<aside class="navigator grid--12">
+					<form class="form grid--12" action="" method="get">
+						<fieldset class="form__field-list">
 							<div class="form__field-item">
 								<input class="form__input--text form__input--text-half" type="email" name="name" placeholder="会社名で検索" />
 							</div>
@@ -54,7 +54,41 @@
 						</fieldset>
 					</form>
 				</aside>
-				<section class="">
+				<section class="grid--23">
+					<div>取引先一覧</div>
+				</section>
+			</section>
+<!--
+			<section class="main__body grid__wrapper">
+				<aside class="navigator grid__wrapper-form">
+					<form class="form form__wrapper" action="" method="">
+						<fieldset class="form__field-list">
+							<div class="form__field-item">
+								<input class="form__input--text form__input--text-half" type="email" name="name" placeholder="会社名で検索" />
+							</div>
+							<div class="form__field-item">
+								<select class="form__select--unfit-content" name="priority">
+									<option value="">ランクで検索</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+							<div class="form__field-item">
+								<input class="form__input--text form__input--text-half" type="text" name="industry" placeholder="事業内容で検索" />
+							</div>
+							<div class="form__field-item">
+								<input class="form__input--text form__input--text-half" type="email" name="address" placeholder="所在地で検索" />
+							</div>
+							<div class="form__field-item">
+								<button class="form__button" href="/auth/signup">検索</button>
+							</div>
+						</fieldset>
+					</form>
+				</aside>
+				<section class="grid__wrapper-content">
 					<table border="1">
 						<thead>
 							<tr>
@@ -117,6 +151,7 @@
 					</table>
 				</section>
 			</section>
+-->
 		</article>
 	</main>
 	</th:block>

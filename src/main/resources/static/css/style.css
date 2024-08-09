@@ -161,6 +161,24 @@ html body {
   background-color: #3498DB;
 }
 
+.grid__wrapper {
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-template-columns: -webkit-fit-content 1fr;
+  grid-template-columns: fit-content 1fr;
+}
+.grid--12 {
+  grid-column: 1/2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.grid--23 {
+  grid-column: 2/3;
+}
+
 /* 入力部品の基本スタイル */
 .form {
   width: 43.4rem;
